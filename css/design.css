@@ -1,0 +1,111 @@
+.drawing-area{
+    position: absolute;
+    border: gray;
+    border-width: 4px;
+    top: 15%;
+    left: 160px;
+    z-index: 10;
+    width: 200px;
+    height: 400px;
+
+}
+.canvas-container{
+    width: 200px; 
+    height: 400px; 
+    position: relative;
+}
+.canvas-container :hover{
+    border-color: blue;
+    border-style: dotted;
+    border-width: 0.5px;
+}
+.drawing-area-back{
+    position: absolute;
+    border: gray;
+    border-width: 4px;
+    top: 15%;
+    left: 160px;
+    z-index: 10;
+    width: 200px;
+    height: 400px;
+
+}
+.canvas-container-back{
+    width: 200px; 
+    height: 400px; 
+    position: relative; 
+}
+.canvas-container-back :hover{
+    border-color: blue;
+    border-style: dotted;
+    border-width: 0.5px;
+}
+.drawing-area-right{
+    position: absolute;
+    border: gray;
+    border-width: 4px;
+    top: 29%;
+    left: 165px;
+    z-index: 10;
+    width: 200px;
+    height: 380px;
+
+}
+.canvas-container-right{
+    width: 200px; 
+    height: 380px; 
+    position: relative; 
+}
+.canvas-container-right :hover{
+    border-color: blue;
+    border-style: dotted;
+    border-width: 0.5px;
+}
+.drawing-area-left{
+    position: absolute;
+    border: gray;
+    border-width: 4px;
+    top: 29%;
+    left: 165px;
+    z-index: 10;
+    width: 200px;
+    height: 380px;
+
+}
+.canvas-container-left{
+    width: 200px; 
+    height: 380px; 
+    position: relative; 
+}
+.canvas-container-left :hover{
+    border-color: blue;
+    border-style: dotted;
+    border-width: 0.5px;
+}
+#tshirt-div{
+    position: relative;
+    background-color: #fff;
+    margin:0px auto;
+    width: auto;
+    height: auto;
+}
+.file-field.big .file-path-wrapper{
+    height: 3.2rem;
+}
+.file-field.big .file-path-wrapper .file-path{
+    height: 3.2rem;
+}
+@media (max-width: 769px){
+    .Control__Panel{
+        display: none;
+      }
+      #tshirt-div{
+        width: 100%;
+      }
+      .drawing-area{
+        transform: translateX(-20%);
+      }
+      .tshirt-backgroundpicture{
+        width: auto;  
+      }     
+    }

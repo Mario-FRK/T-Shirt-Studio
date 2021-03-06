@@ -15,9 +15,9 @@
 <!-- site icons -->
 <link rel="icon" href="images/fevicon/fevicon.png" type="image/gif" />
 <!-- bootstrap css -->
-<link rel="stylesheet" href="css/bootstrap.min.css" />
 <!-- Site css -->
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/helpers.css"/>
 <!-- responsive css -->
 <link rel="stylesheet" href="css/responsive.css" />
 <!-- colors css -->
@@ -26,56 +26,139 @@
 <link rel="stylesheet" href="css/custom.css" />
 <!-- wow Animation css -->
 <link rel="stylesheet" href="css/animate.css" />
+<!-- design css -->
+<link rel="stylesheet" href="css/design.css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <!-- revolution slider css -->
 <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
 <link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
 <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" />
+<link rel="stylesheet" href="css/sweetalert2.min.css"> 
+
+
+
+
+
+<!-- bootstrap 4.x is supported. You can also use the bootstrap css 3.3.x versions -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.9/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+<!-- if using RTL (Right-To-Left) orientation, load the RTL CSS file after fileinput.css by uncommenting below -->
+<!-- link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.9/css/fileinput-rtl.min.css" media="all" rel="stylesheet" type="text/css" /-->
+<!-- the font awesome icon library if using with `fas` theme (or Bootstrap 4.x). Note that default icons used in the plugin are glyphicons that are bundled only with Bootstrap 3.x. -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<!-- piexif.min.js is needed for auto orienting image files OR when restoring exif data in resized images and when you
+    wish to resize images before upload. This must be loaded before fileinput.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- bootstrap.min.js below is needed if you wish to zoom and preview file content in a detail modal
+    dialog. bootstrap 4.x is supported. You can also use the bootstrap js 3.3.x versions. -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/html2canvas.min.js"></script>
+<script type="text/javascript" src="js/canvas2image.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <style type="text/css">
+      @font-face {
+  font-family: "Adrip";
+  src: url("fonts/adrip1.ttf");
+}
+@font-face {
+  font-family: "AmericanTyperwriterBold";
+  src: url("fonts/American\ Typewriter\ Bold\ BT.ttf");
+}
+@font-face {
+  font-family: "BestMarker";
+  src: url("fonts/BestMarker.ttf");
+}
+@font-face {
+  font-family: "BillionStars";
+  src: url("fonts/BillionStars_PersonalUse.ttf");
+}
+@font-face {
+  font-family: "Freshman";
+  src: url("fonts/Freshman.ttf");
+}
+@font-face {
+  font-family: "GangBangCrime";
+  src: url("fonts/GANG\ BANG\ CRIME.ttf");
+}
+@font-face {
+  font-family: "Hunters";
+  src: url("fonts/Hunters.otf");
+}
+@font-face {
+  font-family: "Impacted";
+  src: url("fonts/IMPACTED.ttf");
+}
+@font-face {
+  font-family: "KnightBrushDemo";
+  src: url("fonts/Knight\ Brush\ Demo.otf");
+}
+@font-face {
+  font-family: "MasterofBreak";
+  src: url("fonts/master_of_break.otf");
+}
+@font-face {
+  font-family: "ShakaPow";
+  src: url("fonts/Shaka\ Pow.ttf");
+}
+@font-face {
+  font-family: "ShakaPowHollow";
+  src: url("fonts/Shaka\ Pow\ Hollow.ttf");
+}
+@font-face {
+  font-family: "ShakaPowUpright";
+  src: url("fonts/Shaka\ Pow\ Upright.ttf");
+}
+@font-face {
+  font-family: "ShakaPowUprightHollow";
+  src: url("fonts/Shaka\ Pow\ Upright\ Hollow.ttf");
+}
+@font-face {
+  font-family: "SignPantersScript";
+  src: url("fonts/Sign\ Panters\ Script\ DEMO.ttf");
+}
+@font-face {
+  font-family: "Valentine";
+  src: url("fonts/valentine.ttf");
+}
+@font-face {
+  font-family: "Waltograph42";
+  src: url("fonts/waltograph42.otf");
+}
+@font-face {
+  font-family: "WaltographUI";
+  src: url("fonts/waltographUI.ttf");
+}
+.Adrip{font-family: Adrip;}
+.AmericanTyperwriterBold{font-family: AmericanTyperwriterBold;}
+.BestMarker{font-family: BestMarker;}
+.BillionStars{font-family: BillionStars;}
+.Freshman{font-family: Freshman;}
+.GangBangCrime{font-family: GangBangCrime;}
+.Hunters{font-family: Hunters;}
+.Impacted{font-family: Impacted;}
+.KnightBrushDemo{font-family: KnightBrushDemo;}
+.MasterofBreak{font-family: MasterofBreak;}
+.ShakaPow{font-family: ShakaPow;}
+.ShakaPowHollow{font-family: ShakaPowHollow;}
+.ShakaPowUpright{font-family: ShakaPowUpright;}
+.ShakaPowUprightHollow{font-family: ShakaPowUprightHollow;}
+.SignPantersScript{font-family: SignPantersScript;}
+.Valentine{font-family: Valentine;}
+.Waltograph4{font-family: Waltograph4;}
+.WaltographUI{font-family: WaltographUI;}
+      </style>
 </head>
-<body id="default_theme" class="it_service">
-<!-- loader -->
-<div class="bg_load"> <img class="loader_animation" src="images/loaders/loader_1.png" alt="#" /> </div>
-<!-- end loader -->
-<!-- header -->
+  <!-- header -->
 <header id="default_header" class="header_style_1">
-  <!-- header top -->
-  <div class="header_top">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="full">
-            <div class="topbar-left">
-              <ul class="list-inline">
-                <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">540 Lorem Ipsum New York, AB 90218</span> </li>
-                <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span> </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 right_section_header_top">
-          <div class="float-left">
-            <div class="social_icon">
-              <ul class="list-inline">
-                <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
-                <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
-                <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
-                <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
-                <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="float-right">
-            <div class="make_appo"> <a class="btn white_btn" href="make_appointment.html">Make Appointment</a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end header top -->
-  <!-- header bottom -->
   <div class="header_bottom">
     <div class="container">
       <div class="row">
@@ -85,7 +168,6 @@
           <!-- logo end -->
         </div>
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-          <!-- menu start -->
           <!-- menu start -->
           <div class="menu_side">
             <div id="navbar_menu">
@@ -110,115 +192,1262 @@
   <!-- header bottom end -->
 </header>
 <!-- end header -->
-<!-- section -->
-<div id="slider" class="section main_slider">
-    <BODY>
-        <P>sECCION PARA DISE;O DE PLAYERAS
-     </BODY>
+<body id="default_theme" class="it_service">
+<!-- loader -->
+<div class="bg_load"> <img class="loader_animation" src="images/loaders/loader_1.png" alt="#" /> </div>
+<!-- end loader -->
+
+
+<div class="row" id="panel-vista">
+  <div id="div_tshirt" class="col-md-8 form-group">
+    <div class="container-fuild form-group">
+      <div class="row align-items-start" id="items_vista">
+        <div class="col">
+            <div class="row">
+              <div class="col" style="background-color: #fff; width: 80px; height: 110px;">
+              <div id="t-shirt-div-front" value="Show Back View" style=" position: relative;
+              background-color: #fff;
+              margin:0px auto;
+              width: 80px;
+              height: 100px;
+              border-color: black;
+              border-style: dotted;
+              border-width: 0.5px;
+              "
+              >
+                <img id="frontImg" src="img/crew_front.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+                <div id="drawingArea1" class="drawing-area1">					
+                  <div class="canvas-container1">
+                      <img id="frontImgPrice"  width="30" height="60" >
+                  </div>
+              </div>
+              <style>
+                .drawing-area1{
+                position: absolute;
+                border: gray;
+                border-width: 4px;
+                top: 15%;
+                left: 24px;
+                z-index: 10;
+                width: 30px;
+                height: 60px;
+                }
+              </style>
+              </div>
+              </div>
+              
+              <div class="col" style="background-color: #fff; width: 80px; height: 110px;">
+                <div id="t-shirt-div-right" value="Show Right View" style=" position: relative;
+                background-color: #fff;
+                margin:0px auto;
+                width: 80px;
+                height: 100;
+                border-color: black;
+                border-style: dotted;
+                border-width: 0.5px;
+                "
+                >
+                  <img id="rightImg" src="img/crew_right.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+                  <div id="drawingArea3" class="drawing-area3">					
+                    <div class="canvas-container3">
+                      <img id="rightImgPrice"  width="30" height="50" >
+                    </div>
+                  </div>
+                <style>
+                    .drawing-area3{
+                      position: absolute;
+                      border: gray;
+                      border-width: 4px;
+                      top: 29%;
+                      left: 25px;
+                      z-index: 10;
+                      width: 30px;
+                      height: 50px;
+                  }
+                </style>
+                </div>
+                </div>
+
+
+                <div class="col" style="background-color: #fff; width: 80px; height: 110px;">
+                  <div id="t-shirt-div-left" value="Show Left View" style=" position: relative;
+                  background-color: #fff;
+                  margin:0px auto;
+                  width: 80px;
+                  height: 100;
+                  border-color: black;
+                  border-style: dotted;
+                  border-width: 0.5px;
+                  ">
+                  <img id="leftImg" src="img/crew_left.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+                  <div id="drawingArea4" class="drawing-area4">					
+                    <div class="canvas-container4">
+                      <img id="leftImgPrice"  width="30" height="50" >
+                    </div>
+                  </div>
+                <style>
+                    .drawing-area4{
+                      position: absolute;
+                      border: gray;
+                      border-width: 4px;
+                      top: 29%;
+                      left: 25px;
+                      z-index: 10;
+                      width: 30px;
+                      height: 50px;
+                  }
+                </style>
+                  </div>
+                  </div>
+
+
+                <div class="col" style="background-color: #fff; width: 80px; height: 110px;">
+                    <div id="t-shirt-div-back" value="Show Front View" style=" position: relative;
+                    background-color: #fff;
+                    margin:0px auto;
+                    width: 80px;
+                    height: 100;
+                    border-color: black;
+                    border-style: dotted;
+                    border-width: 0.5px;
+                    ">
+                    <img id="backImg" src="img/crew_back.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+                    <div id="drawingArea2" class="drawing-area2">					
+                      <div class="canvas-container2">
+                          <img id="backImgPrice" width="30" height="60">
+                      </div>
+                  </div>
+                  <style>
+                    .drawing-area2{
+                    position: absolute;
+                    border: gray;
+                    border-width: 4px;
+                    top: 15%;
+                    left: 24px;
+                    z-index: 10;
+                    width: 30px;
+                    height: 60px;
+    
+                    }
+    
+                  </style>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center" id="item_playera">
+            <div id="tshirt-div">
+
+              <img  class="img-fluid" id="tshirt-backgroundpicture" src="img/crew_front.png">
+        
+              <div id="drawingArea" class="drawing-area">					
+                  <div class="canvas-container">
+                      <canvas id="tshirt-canvas" width="200" height="400" class="hover"></canvas>
+                  </div>
+              </div>
+              <div id="drawingArea-back" class="drawing-area-back">					
+                <div class="canvas-container-back">
+                    <canvas id="tshirt-canvas-back" width="200" height="400" class="hover"></canvas>
+                </div>
+            </div>
+            <div id="drawingArea-right" class="drawing-area-right">					
+              <div class="canvas-container-right">
+                  <canvas id="tshirt-canvas-right" width="200" height="350" class="hover"></canvas>
+              </div>
+            </div>
+            <div id="drawingArea-left" class="drawing-area-left">					
+              <div class="canvas-container-left">
+                  <canvas id="tshirt-canvas-left" width="200" height="350" class="hover"></canvas>
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="div_tools" class="col-md-4 Control__Panel">
+    <div id="sidebar">
+      <ul>
+        <li id="back">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-2"><i class="material-icons" style="color: white;">keyboard_arrow_right</i></div>
+                <div class="col-md-10">
+                    <h3 id="tipo" style="color: white;">Talla adultos</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col">
+                    <button id="btnKids" class="btn btn-info btn-block" type="button">Niñous</button>
+                    <button id="btnAdult" class="btn btn-info btn-block" type="button" style="display: none;">Adultous</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="S">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">S</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                  <div class="col-md-2"><button class="btn-block minus-btn disabled" type="button" onclick="minusBtn();">-</button></div>
+                  <div class="col-md-4"><input type="text" id="quantity" class="form-control" value="0" oninput="Cantidad(this.value)"></div>
+                  <div class="col-md-2"><button class="btn-block plus-btn" type="button" onclick="plusBtn();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </li>
+
+        <li id="M">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">M</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btnm disabled" type="button" onclick="minusBtnm();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantitym" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btnm" type="button" onclick="plusBtnm();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="L">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">L</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btnl disabled" type="button" onclick="minusBtnl();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantityl" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btnl" type="button" onclick="plusBtnl();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="XL">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">XL</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btnx disabled" type="button" onclick="minusBtnx();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantityx" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btnx" type="button" onclick="plusBtnx();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="2XL">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">2XL</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btn2 disabled" type="button" onclick="minusBtn2();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantity2" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btn2" type="button" onclick="plusBtn2()">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="3XL">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">3XL</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btn3 disabled" type="button" onclick="minusBtn3();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantity3" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btn3" type="button" onclick="plusBtn3();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="4XL">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">4XL</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btn4 disabled" type="button" onclick="minusBtn4();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantity4" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btn4" type="button" onclick="plusBtn4();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="5XL">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">5XL</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btn5 disabled" type="button" onclick="minusBtn5();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantity5" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btn5" type="button" onclick="plusBtn5();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="XSK">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">XS</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                  <div class="col-md-2"><button class="btn-block minus-btnxs disabled" type="button" onclick="minusBtnxs();">-</button></div>
+                  <div class="col-md-4"><input type="text" id="quantityxs" class="form-control" value="0" oninput="Cantidad(this.value)"></div>
+                  <div class="col-md-2"><button class="btn-block plus-btnxs" type="button" onclick="plusBtnxs();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="SK">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">S</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                  <div class="col-md-2"><button class="btn-block minus-btnK disabled" type="button" onclick="minusBtnK();">-</button></div>
+                  <div class="col-md-4"><input type="text" id="quantityK" class="form-control" value="0" oninput="Cantidad(this.value)"></div>
+                  <div class="col-md-2"><button class="btn-block plus-btnK" type="button" onclick="plusBtnK();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </li>
+
+        <li id="MK">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">M</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btnmK disabled" type="button" onclick="minusBtnmK();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantitymK" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btnmK" type="button" onclick="plusBtnmK();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="LK">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">L</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btnlK disabled" type="button" onclick="minusBtnlK();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantitylK" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btnlK" type="button" onclick="plusBtnlK();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li id="XLK">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-4"><h5 style="color: white;">XL</h5></div>
+                <div class="col-md-8">
+                  <div class="row" id="buttons">
+                    <div class="col-md-2"><button class="btn-block minus-btnxK disabled" type="button" onclick="minusBtnxK();">-</button></div>
+                    <div class="col-md-4"><input type="text" id="quantityxK" class="form-control" value="0" onchange="Cantidad(this.value)" disabled></div>
+                    <div class="col-md-2"><button class="btn-block plus-btnxK" type="button" onclick="plusBtnxK();">+</button></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-3"><h6 style="color: white;">Front</h6>
+                  <div class="col"><h5 id="dFront" style="color: white;"></h5></div>
+                </div>
+                <div class="col-md-3"><h6 style="color: white;">Back</h6>
+                  <div class="col"><h5 id="dBack" style="color: white;"></h5></div>
+                </div>
+                <div class="col-md-3"><h6 style="color: white;">Right</h6>
+                  <div class="col"><h5 id="dRight" style="color: white;"></h5></div>
+                </div>
+                <div class="col-md-3"><h6 style="color: white;">Left</h6>
+                  <div class="col"><h5 id="dLeft" style="color: white;"></h5></div>
+                </div>
+                  
+                </div>
+              </div>
+            </div>
+        </li>
+
+        <li>
+          <a><h6 style="color: white;">Article Price: <a style="font-size: 20px;" id="price"></a></h6>
+          <button type="button" id="shopCar" class="btn btn-danger btn-lg btn-block" disabled>
+            <i class="material-icons">shopping_cart</i>
+          </button>
+            
+        </li>
+      </ul>
+    </div>
+    <style>
+      #sidebar {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #0a7aa9;
+        left: 100%;
+        transition: all 500ms linear;
+      }
+
+      #sidebar.active {
+        left: 0px;
+      }
+
+      #sidebar ul li {
+        color: rgba(230, 230, 230, .9);
+        list-style: none;
+        padding: 5px 5px;
+        border-bottom: 1px solid rgba(100, 100, 100, .3);
+        text-align: center;
+      }
+
+      #buttons button {
+        padding: 3px 3px;
+        background: rgb(214, 214, 214);
+        border: none;
+        border-radius: 15px;
+        color: rgb(50, 207, 207);
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        box-shadow: -7px -7px 20px 0 #494a4baa,
+        7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      #buttons button:hover {
+        box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7),
+        inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+    </style>
+    <div class="container" id="tools">
+      <div class="form-control-range" id="design">
+        <label for="tshirt-color" style="color: #5e63a1; margin-top: 20px; text-align: center;
+        font-size: 25px; text-shadow: 0 0 3px grey, 0 0 5px gray; font-family: Verdana, Geneva, Tahoma, sans-serifs;">Select Design:</label>
+        <form>
+          <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#modal25" value="25" style="color: rgba(255, 230, 7, 0.857);">$ 25</button>
+          <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#modal35" value="35" style="color: rgba(255, 230, 7, 0.857);">$ 35</button>  
+        </form>
+            <!-- Modal Design25-->
+  <div class="modal" id="modal25" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Design $ 25</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <style type="text/css">
+          .container.gallery-container {
+                background-color: #fff;
+                color: #35373a;
+                min-height: 100vh;
+                border-radius: 20px;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+            }
+  
+            .gallery-container h1 {
+                text-align: center;
+                margin-top: 70px;
+                font-family: 'Droid Sans', sans-serif;
+                font-weight: bold;
+            }
+  
+            .gallery-container p.page-description {
+                text-align: center;
+                max-width: 800px;
+                margin: 25px auto;
+                color: #888;
+                font-size: 18px;
+            }
+  
+            .tz-gallery {
+                padding: 40px;
+            }
+  
+            .tz-gallery .lightbox img {
+                width: 100%;
+                margin-bottom: 30px;
+                transition: 0.2s ease-in-out;
+                box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+            }
+  
+  
+            .tz-gallery .lightbox img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+            }
+  
+            .tz-gallery img {
+                border-radius: 4px;
+            }
+  
+            .baguetteBox-button {
+                background-color: transparent !important;
+            }
+  
+  
+            @media(max-width: 768px) {
+                body {
+                    padding: 0;
+                }
+  
+                .container.gallery-container {
+                    border-radius: 0;
+                }
+            }
+          </style>
+          <div class="container gallery-container">
+            <div class="tz-gallery">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/00.png" alt="00" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/01.png" alt="01" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/02.png" alt="02" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/03.png" alt="03" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/04.png" alt="04" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/05.png" alt="05" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/06.png" alt="06" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/07.png" alt="07" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/25Trans/08.png" alt="08" onclick="addImage(this.src,1);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/25Trans/09.png" alt="09" onclick="addImage(this.src,1);">
+                      </a>
+                  </div>
+                </div>
+        
+            </div>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal Design35-->
+  <div class="modal" id="modal35" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Design $ 35</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="container gallery-container">
+            
+            <div class="tz-gallery">
+        
+                <div class="row">
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/000.png" alt="000" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/001.png" alt="001" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/002.png" alt="002" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/003.png" alt="003" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/004.png" alt="004" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/005.png" alt="005" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/006.png" alt="006" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/007.png" alt="007" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/008.png" alt="008" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/009.png" alt="009" onclick="addImage(this.src,2);">
+                      </a>
+                      </div>
+                        <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                          <a class="lightbox">
+                              <img src="images/35Trans/010.png" alt="010" onclick="addImage(this.src,2);">
+                          </a>
+                        </div>
+                      <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                        <a class="lightbox">
+                            <img src="images/35Trans/011.png" alt="011" onclick="addImage(this.src,2);">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/012.png" alt="012" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/013.png" alt="013" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/014.png" alt="014" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/015.png" alt="015" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/015.png" alt="015" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/016.png" alt="016" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/017.png" alt="017" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/018.png" alt="018" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/019.png" alt="019" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/020.png" alt="020" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/021.png" alt="021" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/022.png" alt="022" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4" data-dismiss="modal">
+                      <a class="lightbox">
+                          <img src="images/35Trans/023.png" alt="023" onclick="addImage(this.src,2);">
+                      </a>
+                    </div>
+  
+                </div>
+        
+            </div>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     </div>
+      <div class="form-control-range">
+        <label for="tshirt-color" style="color: #5e63a1; margin-top: 20px; text-align: center;
+        font-size: 25px; text-shadow: 0 0 3px grey, 0 0 5px gray; font-family: Verdana, Geneva, Tahoma, sans-serifs;">T-Shirt Color:</label>
+        
+        <div id="tshirt-color" class="form-control-range">
+          <ul id="lista-colores" class="lista" style="list-style-type:disc">
+            <li id="colores" class="color-preview" title="White" style="background-color:#ffffff; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#ffffff"></li>
+            <li class="color-preview" title="Grey" style="background-color:#aaa792; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#aaa792"></li>
+            <li class="color-preview" title="Black" style="background-color:#040404; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#040404"></li>
+            <li class="color-preview" title="Azalea" style="background-color:#DD74A1; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#DD74A1"></li>
+            <li class="color-preview" title="Carolina blue" style="background-color:#99badd; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#99badd"></li>
+            <li class="color-preview" title="Daisy" style="background-color:#F8FF75; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#F8FF75"></li>
+            <li class="color-preview" title="dark heather" style="background-color:#554658; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#554658"></li>
+            <li class="color-preview" title="Electric green" style="background-color:#CEFA05; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#CEFA05"></li>
+            <li class="color-preview" title="Forest Green" style="background-color:#014421; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#014421"></li>
+            <li class="color-preview" title="Gold" style="background-color:#c39c59; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#c39c59"></li>
+            <li class="color-preview" title="Graphite Heather" style="background-color:#707372; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#707372"></li>
+            <li class="color-preview" title="Gravel" style="background-color:#888B8D; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#888B8D"></li>
+            <li class="color-preview" title="Heather Sport dark navy" style="background-color:#595478; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#595478"></li>
+            <li class="color-preview" title="Heather Sport Royal" style="background-color:#1D4F91; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#1D4F91"></li>
+            <li class="color-preview" title="Heather Sport sacarlet Red" style="background-color:#B83A4B; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#B83A4B"></li>
+            <li class="color-preview" title="Helicona" style="background-color:#DB3E79; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#DB3E79"></li>
+            <li class="color-preview" title="irish green" style="background-color:#00A74A; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#00A74A"></li>
+            <li class="color-preview" title="Jade Dome" style="background-color:#008E85; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#008E85"></li>
+            <li class="color-preview" title="kelly green" style="background-color:#00805E; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#00805E"></li>
+            <li class="color-preview" title="Light Blue" style="background-color:#A4C8E1; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#A4C8E1"></li>							
+            <li class="color-preview" title="Light Pink" style="background-color:#E4C6D4; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#E4C6D4"></li>							
+            <li class="color-preview" title="Lime" style="background-color:#92BF55; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#92BF55"></li>							
+            <li class="color-preview" title="Maroon" style="background-color:#5B2B42; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#5B2B42"></li>							
+            <li class="color-preview" title="Navy" style="background-color:#263147; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#263147"></li>							
+            <li class="color-preview" title="Orange" style="background-color:#F4633A; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#F4633A"></li>							
+            <li class="color-preview" title="Orchit" style="background-color:#C5B4E3; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#C5B4E3"></li>							
+            <li class="color-preview" title="Purple" style="background-color:#464E7E; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#464E7E"></li>							
+            <li class="color-preview" title="Red" style="background-color:#D50032; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#D50032"></li>							
+            <li class="color-preview" title="Royal" style="background-color:#224D8F; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#224D8F"></li>							
+            <li class="color-preview" title="S Orange" style="background-color:#E5801C; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#E5801C"></li>				
+            <li class="color-preview" title="Safety Green" style="background-color:#C6D219; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#C6D219"></li>				
+            <li class="color-preview" title="Sand" style="background-color:#CABFAD; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#CABFAD"></li>				
+            <li class="color-preview" title="Sapphire" style="background-color:#0077B5; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#0077B5"></li>				
+            <li class="color-preview" title="Sport Dark Green" style="background-color:#205C40; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#205C40"></li>				
+            <li class="color-preview" title="Sport Dark Maroon" style="background-color:#572932; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#572932"></li>			
+            <li class="color-preview" title="Sport Dark Navy" style="background-color:#00263A; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#00263A"></li>			
+            <li class="color-preview" title="Sport Grey" style="background-color:#97999B; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#97999B"></li>			
+            <li class="color-preview" title="Sport Royal" style="background-color:#002D72; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#002D72"></li>			
+            <li class="color-preview" title="sport scarlet Red" style="background-color:#BA0C2F; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#BA0C2F"></li>			
+            <li class="color-preview" title="T Orange" style="background-color:#B65A30; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#B65A30"></li>			
+            <li class="color-preview" title="Tennessee Orange" style="background-color:#FF8200; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#FF8200"></li>
+          </ul>
+          <hr>
+        </div>
+      </div>
+  
+      <div class="form-control-range">
+        <label class="form-group-sm" for="tshirt-custompicture" style="color: #5e63a1; margin-top: 20px; text-align: center;
+        font-size: 25px; text-shadow: 0 0 3px grey, 0 0 5px gray; font-family: Verdana, Geneva, Tahoma, sans-serifs;">Upload your own design:</label>
+      <input id="tshirt-custompicture" type="file" class="file" data-show-preview="false" data-show-upload="false">
+      <hr>
+        </div>
+  
+        <div class="form-control-range">
+          <label class="form-group-sm" for="tshirt-custompicture" style="color: #5e63a1; margin-top: 20px; text-align: center;
+          font-size: 25px; text-shadow: 0 0 3px grey, 0 0 5px gray; font-family: Verdana, Geneva, Tahoma, sans-serifs;">Set text custom:</label>  <br>
+              <input class="form-control mr-sm-2" type="text" id="text-string" type="text" placeholder="add text here...">
+              <button id="add-text" class="btn btn-outline-success my-2 my-sm-0" title="Add text"><i class="icon-share-alt" style="color: green;"></i></button>
+              <div align="center" style="min-height: 32px;"  >
+                <div class="clearfix" id="texteditor" style="display:none">
+                  <label for="">Select Font</label>
+                    <select id="" class="form-control" onclick="setFont(this.value);">
+                      <option>Select Font</option>
+                      <option value='Adrip' class="Adrip" style="font-family: Adrip;">Adrip</option>
+                      <option value='AmericanTyperwriterBold' class="AmericanTyperwriterBold" style="font-family: AmericanTyperwriterBold;">AmericanTyperwriterBold</option>
+                      <option value='BestMarker' class="BestMarker" style="font-family: BestMarker;">BestMarker</option>
+                      <option value='BillionStars' class="BillionStars" style="font-family: BillionStars;">BillionStars</option>
+                      <option value='Freshman' class="Freshman" style="font-family: Freshman;">Freshman</option>
+                      <option value='GangBangCrime' class="GangBangCrime" style="font-family: GangBangCrime;">GangBangCrime</option>
+                      <option value='Hunters' class="Hunters" s0tyle="font-family: Hunters;">Hunters</option>
+                      <option value='Impacted' class="Impacted" style="font-family: Impacted;">Impacted</option>
+                      <option value='KnightBrushDemo' class="KnightBrushDemo" style="font-family: KnightBrushDemo;">KnightBrushDemo</option>
+                      <option value='MasterofBreak' class="MasterofBreak" style="font-family: MasterofBreak;">MasterofBreak</option>
+                      <option value='ShakaPow' class="ShakaPow" style="font-family: ShakaPow;">ShakaPow</option>
+                      <option value='ShakaPowHollow' class="ShakaPowHollow" style="font-family: ShakaPowHollow;">ShakaPowHollow</option>
+                      <option value='ShakaPowUpright' class="ShakaPowUpright" style="font-family: ShakaPowUpright;">ShakaPowUpright</option>
+                      <option value='SignPantersScript' class="SignPantersScript" style="font-family: SignPantersScript;">SignPantersScript</option>
+                      <option value='Valentine' class="Valentine" style="font-family: Valentine;">Valentine</option>
+                      <option value='Waltograph4' class="Waltograph4" style="font-family: Waltograph4;">Waltograph4</option>
+                      <option value='WaltographUI' class="WaltographUI" style="font-family: WaltographUI;">WaltographUI</option>
+                    </select>			
+                <button  type="button" id="color-font" class="btn btn-block btn-outline-danger" data-toggle="modal" data-target="#modalTextColor" title="Font Color"><i class="material-icons" style="color: red;">format_color_fill</i></button> 		  
+              </div>												
+            </div>		 
+        </div>
+  
+        <div class="form-control-range">
+          <button id="btn_price" class="btn btn-outline-primary btn-lg btn-block"  onclick="Counter();" ></t><i class="material-icons" style="color: blue;">attach_money</i></button>
+        </div>
+    </div>
+    
+  </div>
 </div>
-<!-- end section -->
-<!-- section -->
 
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="search_bar" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
+ <!-- Modal TextColors-->
+ <div class="modal" id="modalTextColor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+        <h5 class="modal-title" id="exampleModalLongTitle">Select Text Color</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <div class="modal-body">
-        <div class="row">
-          <div class="col-lg-8 col-md-8 col-sm-8 offset-lg-2 offset-md-2 offset-sm-2 col-xs-10 col-xs-offset-1">
-            <div class="navbar-search">
-              <form action="#" method="get" id="search-global-form" class="search-global">
-                <input type="text" placeholder="Type to search" autocomplete="off" name="s" id="search" value="" class="search-global__input">
-                <button class="search-global__btn"><i class="fa fa-search"></i></button>
-                <div class="search-global__note">Begin typing your search above and press return to search.</div>
-              </form>
-            </div>
-          </div>
+        <div id="text-color" class="form-control-range">
+          <ul id="text-colores" class="lista" style="list-style-type:disc">
+            <li id="colores" class="color-preview-text" title="White" style="background-color:#ffffff; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#ffffff"></li>
+            <li class="color-preview-text" title="Matte Black" style="background-color:#0c0b0c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#0c0b0c"></li>
+            <li class="color-preview-text" title="Black" style="background-color:#040404; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#040404"></li>
+            <li class="color-preview-text" title="Matte Royal Blue" style="background-color:#1d277f; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#1d277f"></li>
+            <li class="color-preview" title="Royal Blue" style="background-color:#5e63a1; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#5e63a1"></li>
+            <li class="color-preview-text" title="Matte Navy Blue" style="background-color:#0a142c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#0a142c"></li>
+            <li class="color-preview-text" title="Navy Blue" style="background-color:#353c45; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#353c45"></li>
+            <li class="color-preview-text" title="Matte Red" style="background-color:#c6120c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#c6120c"></li>
+            <li class="color-preview-text" title="Red" style="background-color:#bc0e25; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#bc0e25"></li>
+            <li class="color-preview-text" title="Yellow" style="background-color:#fbdb24; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#fbdb24"></li>
+            <li class="color-preview-text" title="Matte Green" style="background-color:#218053; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#218053"></li>
+            <li class="color-preview-text" title="Green" style="background-color:#438565; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#438565"></li>
+            <li class="color-preview-text" title="Matte Orange" style="background-color:#f44305; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f44305"></li>
+            <li class="color-preview-text" title="Orange" style="background-color:#f96335; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f96335"></li>
+            <li class="color-preview-text" title="Pink" style="background-color:#cd5682; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#cd5682"></li>
+            <li class="color-preview-text" title="Sky blue" style="background-color:#3c8bd2; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#3c8bd2"></li>
+            <li class="color-preview-text" title="Brown" style="background-color:#5f2e2c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#5f2e2c"></li>
+            <li class="color-preview-text" title="Gold" style="background-color:#c39c59; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#c39c59"></li>
+            <li class="color-preview-text" title="Silver" style="background-color:#e3e2e1; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#e3e2e1"></li>
+            <li class="color-preview-text" title="Burgundy" style="background-color:#8c334c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#8c334c"></li>							
+            <li class="color-preview-text" title="Matte Purple" style="background-color:#12093b; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#12093b"></li>							
+            <li class="color-preview-text" title="Purple" style="background-color:#b09eab; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#b09eab"></li>							
+            <li class="color-preview-text" title="Flor. Yellow" style="background-color:#f7f58d; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f7f58d"></li>							
+            <li class="color-preview-text" title="Flor. Orange" style="background-color:#f86709; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f86709"></li>							
+            <li class="color-preview-text" title="Flor. Green" style="background-color:#24eb5b; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#24eb5b"></li>							
+            <li class="color-preview-text" title="Flor. Pink" style="background-color:#fa51cc; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#fa51cc"></li>							
+            <li class="color-preview-text" title="Flor. Blue" style="background-color:#556cd4; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#556cd4"></li>							
+            <li class="color-preview-text" title="Lemon" style="background-color:#f8f87d; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f8f87d"></li>							
+            <li class="color-preview-text" title="Grey" style="background-color:#aaa792; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#aaa792"></li>							
+            <li class="color-preview-text" title="Orange Soda" style="background-color:#f9722d; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f9722d"></li>				
+            <li class="color-preview-text" title="Dark Green" style="background-color:#4e4e2a; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#4e4e2a"></li>				
+            <li class="color-preview-text" title="Cadette Green" style="background-color:#1f8d64; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#1f8d64"></li>				
+            <li class="color-preview-text" title="Turquoise" style="background-color:#f9722d; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f9722d"></li>				
+            <li class="color-preview-text" title="Sun" style="background-color:#f9d130; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f9d130"></li>				
+            <li class="color-preview-text" title="Cream" style="background-color:#fcfcb4; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#fcfcb4"></li>			
+            <li class="color-preview-text" title="Flor. Raspberry" style="background-color:#f81583; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f81583"></li>			
+            <li class="color-preview-text" title="Bright Red" style="background-color:#f70c05; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f70c05"></li>			
+            <li class="color-preview-text" title="Wicked Purple" style="background-color:#67568d; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#67568d"></li>			
+            <li class="color-preview-text" title="Pale Blue" style="background-color:#b2dbfa; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#b2dbfa"></li>			
+            <li class="color-preview-text" title="lilac" style="background-color:#aa97b8; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#aa97b8"></li>			
+            <li class="color-preview-text" title="Hibiscus" style="background-color:#e44d58; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#e44d58"></li>
+            <li class="color-preview-text" title="Green Apple" style="background-color:#9cd06c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#9cd06c"></li>
+            <li class="color-preview-text" title="Light Pink" style="background-color:#f2dce0; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f2dce0"></li>
+            <li class="color-preview-text" title="Vegas Gold" style="background-color:#a99424; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#a99424"></li>
+            <li class="color-preview-text" title="Cardinal" style="background-color:#690b1e; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#690b1e"></li>
+            <li class="color-preview-text" title="Maroon" style="background-color:#540414; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#540414"></li>
+            <li class="color-preview-text" title="Dark Maroon" style="background-color:#250914; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#250914"></li>
+            <li class="color-preview-text" title="Texas Orange" style="background-color:#c64a1a; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#c64a1a"></li>
+            <li class="color-preview-text" title="Chocolate" style="background-color:#755b30; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#755b30"></li>
+            <li class="color-preview-text" title="Lime" style="background-color:#97d739; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#97d739"></li>
+            <li class="color-preview-text" title="Bubble Gum" style="background-color:#f28fa2; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#f28fa2"></li>
+            <li class="color-preview-text" title="Charcoal" style="background-color:#4f4b4c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#4f4b4c"></li>
+            <li class="color-preview-text" title="Tan" style="background-color:#c9985c; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#c9985c"></li>
+            <li class="color-preview-text" title="Powder Blue" style="background-color:#bbcad5; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#bbcad5"></li>
+            <li class="color-preview-text" title="Fluor. Coral" style="background-color:#fc0404; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#fc0404"></li>
+            <li class="color-preview-text" title="Melon" style="background-color:#fcaca4; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#fcaca4"></li>
+            <li class="color-preview-text" title="Passion Pink" style="background-color:#ba1c64; width: 20px; height: 20px; transform: scale(1.2);
+            transition: ease all 0.5s;" value="#ba1c64"></li>
+          </ul>
+          <hr>
+          <a><b>Color Selected </b>  <li id="color-preview-text-select" class="color-preview-text-select" title="Color" style="background-color:#ffffff;" value=""></li><b><a id="txtColor"></a></b>
         </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="TextColor();">Ok</button>
       </div>
     </div>
   </div>
 </div>
-<!-- End Model search bar -->
-<!-- footer -->
-<footer class="footer_style_2">
-  <div class="container-fuild">
-    <div class="row">
-      <div class="map_section">
-        <div id="map"></div>
-      </div>
-      <div class="footer_blog">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="main-heading left_text">
-              <h2>It Next Theme</h2>
-            </div>
-            <p>Tincidunt elit magnis nulla facilisis. Dolor sagittis maecenas. Sapien nunc amet ultrices, dolores sit ipsum velit purus aliquet, massa fringilla leo orci.</p>
-            <ul class="social_icons">
-              <li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li class="social-icon gp"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-            </ul>
+
+   <!-- Modal Price-->
+   <div class="modal" id="modalPrice" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Total Prices</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div id="carrito" class="table-responsive-md">
+              <table class="table" id="lista-compra">
+                  <thead>
+                      <tr>
+                          <th scope="col">T-shirt</th>
+                          <th scope="col">Color</th>
+                          <th scope="col">Front</th>
+                          <th scope="col">Back</th>
+                      </tr>
+                  </thead>
+                  <tr>
+                    <th scope="col" id="priceT">$</th>
+                    <th scope="col" id="priceC">$</th>
+                    <th scope="col" id="priceF">$</th>
+                    <th scope="col" id="priceB">$</th>
+                </tr>
+              </table>
+          </div>	      		       		   
           </div>
-          <div class="col-md-6">
-            <div class="main-heading left_text">
-              <h2>Additional links</h2>
-            </div>
-            <ul class="footer-menu">
-              <li><a href="it_about.html"><i class="fa fa-angle-right"></i> About us</a></li>
-              <li><a href="it_term_condition.html"><i class="fa fa-angle-right"></i> Terms and conditions</a></li>
-              <li><a href="it_privacy_policy.html"><i class="fa fa-angle-right"></i> Privacy policy</a></li>
-              <li><a href="it_news.html"><i class="fa fa-angle-right"></i> News</a></li>
-              <li><a href="it_contact.html"><i class="fa fa-angle-right"></i> Contact us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <div class="main-heading left_text">
-              <h2>Services</h2>
-            </div>
-            <ul class="footer-menu">
-              <li><a href="it_data_recovery.html"><i class="fa fa-angle-right"></i> Data recovery</a></li>
-              <li><a href="it_computer_repair.html"><i class="fa fa-angle-right"></i> Computer repair</a></li>
-              <li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> Mobile service</a></li>
-              <li><a href="it_network_solution.html"><i class="fa fa-angle-right"></i> Network solutions</a></li>
-              <li><a href="it_techn_support.html"><i class="fa fa-angle-right"></i> Technical support</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <div class="main-heading left_text">
-              <h2>Contact us</h2>
-            </div>
-            <p>123 Second Street Fifth Avenue,<br>
-              Manhattan, New York<br>
-              <span style="font-size:18px;"><a href="tel:+9876543210">+987 654 3210</a></span></p>
-            <div class="footer_mail-section">
-              <form>
-                <fieldset>
-                <div class="field">
-                  <input placeholder="Email" type="text">
-                  <button class="button_custom"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+          <!--Contenedor de las imagenes-->
+          <div class="row align-items-end bottom_img">
+            <div class="col bottom_i">
+              <div class="row">
+                <div class="col" style="background-color: #fff; width: 50px; height: 200px; border-color: black;
+                border-style: dotted;
+                border-width: 0.5px;">
+                <div id="t-shirt-div-front-price" style=" position: relative;
+                background-color: #fff;
+                width: auto;
+                height: 100%;">
+                  <img src="img/crew_front.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+                  
                 </div>
-                </fieldset>
-              </form>
+                </div>
+
+                <div class="col" style="background-color: #fff; width: 50px; height: 200px; border-color: black;
+                border-style: dotted;
+                border-width: 0.5px;">
+                <div id="t-shirt-div-right-price" style=" position: relative;
+                background-color: #fff;
+                width: auto;
+                height: 100%;">
+                <img src="img/crew_right.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+                
+                </div>
+                </div>
+                <div class="col" style="background-color: #fff; width: 50px; height: 200px; border-color: black;
+                border-style: dotted;
+                border-width: 0.5px;">
+                <div id="t-shirt-div-back-price" style=" position: relative;
+                background-color: #fff;
+                width: auto;
+                height: 100%;">
+                <img src="img/crew_back.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+               
+                </div>
+                </div>
+                <div class="col" style="background-color: #fff; width: 50px; height: 200px; border-color: black;
+                border-style: dotted;
+                border-width: 0.5px;">
+                <div id="t-shirt-div-left-price" style=" position: relative;
+                background-color: #fff;
+                width: auto;
+                height: 100%;">
+                <img src="img/crew_left.png" width="100%" height="100%" style="margin-left: auto; margin-right: auto; display: block;">
+                
+                </div>
+                </div>
+              </div>
             </div>
           </div>
+          <form id="form-talla" class="form-inline">
+            <div class="form-group row">
+            <input type="checkbox" id="S" name="S" value="S">
+            <label for="S">S</label>
+            <input type="checkbox" id="M" name="M" value="M">
+            <label for="M">M</label>
+            <input type="checkbox" id="L" name="L" value="L">
+            <label for="L">L</label>
+            <input type="checkbox" id="XL" name="XL" value="XL">
+            <label for="XL">XL</label>
+            <input type="checkbox" id="2XL" name="2XL" value="2XL">
+            <label for="2XL">2 XL</label>
+            <input type="checkbox" id="3XL" name="3XL" value="3XL">
+            <label for="3XL">3 XL</label>
+            <input type="checkbox" id="4XL" name="4XL" value="4XL">
+            <label for="4XL">4 XL</label>
+            <input type="checkbox" id="5XL" name="5XL" value="5XL">
+            <label for="5XL">5 XL</label>
+            </div>
+          </form>
+          <style type="text/css">
+          form{
+            display: flex;
+          }
+          label{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+          }
+              input[type=checkbox] + label {
+              display: inline-block;
+              margin: 0.3em;
+              cursor: pointer;
+              padding: 0.2em;
+            }
+  
+            input[type=checkbox] {
+              display: none;
+            }
+  
+            input[type=checkbox] + label:before {
+              content: "\2714";
+              border: 0.1em solid #000;
+              border-radius: 0.2em;
+              display: inline-block;
+              width: 1.5em;
+              height: 1.5em;
+              padding-left: 0.3em;
+              padding-bottom: 0.3em;
+              margin-right: 0.1em;
+              vertical-align: bottom;
+              color: transparent;
+              transition: .2s;
+            }
+  
+            input[type=checkbox] + label:active:before {
+              transform: scale(0);
+            }
+  
+            input[type=checkbox]:checked + label:before {
+              background-color: MediumSeaGreen;
+              border-color: MediumSeaGreen;
+              color: #fff;
+            }
+            input[type=checkbox]:disabled + label:before {
+              transform: scale(1);
+              border-color: #aaa;
+            }
+  
+          </style>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="shopCar" class="btn btn-info btn-lg btn-block" disabled><i class="material-icons">shopping_cart</i></button>
         </div>
       </div>
-      <div class="cprt">
-        <p>ItNext © Copyrights 2019 Design by html.design</p>
-      </div>
     </div>
+  
   </div>
-</footer>
+    
 <!-- end footer -->
 <!-- js section -->
+  <!-- Include Fabric.js in the page -->
+  <script src="js/fabric.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script> 
+
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!-- menu js -->
@@ -227,126 +1456,75 @@
 <script src="js/wow.js"></script>
 <!-- custom js -->
 <script src="js/custom.js"></script>
-<!-- revolution js files -->
-<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-<!-- map js -->
-<script>
-         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-         // Australia.
-         function initMap() {
-           var map = new google.maps.Map(document.getElementById('map'), {
-             zoom: 11,
-             center: {lat: 40.645037, lng: -73.880224},
-         styles: [
-                  {
-                    elementType: 'geometry',
-                    stylers: [{color: '#fefefe'}]
-                  },
-                  {
-                    elementType: 'labels.icon',
-                    stylers: [{visibility: 'off'}]
-                  },
-                  {
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#616161'}]
-                  },
-                  {
-                    elementType: 'labels.text.stroke',
-                    stylers: [{color: '#f5f5f5'}]
-                  },
-                  {
-                    featureType: 'administrative.land_parcel',
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#bdbdbd'}]
-                  },
-                  {
-                    featureType: 'poi',
-                    elementType: 'geometry',
-                    stylers: [{color: '#eeeeee'}]
-                  },
-                  {
-                    featureType: 'poi',
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#757575'}]
-                  },
-                  {
-                    featureType: 'poi.park',
-                    elementType: 'geometry',
-                    stylers: [{color: '#e5e5e5'}]
-                  },
-                  {
-                    featureType: 'poi.park',
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#9e9e9e'}]
-                  },
-                  {
-                    featureType: 'road',
-                    elementType: 'geometry',
-                    stylers: [{color: '#eee'}]
-                  },
-                  {
-                    featureType: 'road.arterial',
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#3d3523'}]
-                  },
-                  {
-                    featureType: 'road.highway',
-                    elementType: 'geometry',
-                    stylers: [{color: '#eee'}]
-                  },
-                  {
-                    featureType: 'road.highway',
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#616161'}]
-                  },
-                  {
-                    featureType: 'road.local',
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#9e9e9e'}]
-                  },
-                  {
-                    featureType: 'transit.line',
-                    elementType: 'geometry',
-                    stylers: [{color: '#e5e5e5'}]
-                  },
-                  {
-                    featureType: 'transit.station',
-                    elementType: 'geometry',
-                    stylers: [{color: '#000'}]
-                  },
-                  {
-                    featureType: 'water',
-                    elementType: 'geometry',
-                    stylers: [{color: '#c8d7d4'}]
-                  },
-                  {
-                    featureType: 'water',
-                    elementType: 'labels.text.fill',
-                    stylers: [{color: '#b1a481'}]
-                  }
-                ]
-         });
-         
-           var image = 'images/it_service/location_icon_map_cont.png';
-           var beachMarker = new google.maps.Marker({
-             position: {lat: 40.645037, lng: -73.880224},
-             map: map,
-             icon: image
-           });
-         }
-      </script>
-<!-- google map js -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <!-- end google map js -->
+<script type="text/javascript" src="js/t-shirt_editor.js"></script>
+<script>
+  const btnToggle = document.querySelector('#btn_price');
+  $('#XSK').hide();
+  $('#SK').hide();
+  $('#MK').hide();
+  $('#LK').hide();
+  $('#XLK').hide();
+  $("#sidebar").hide();
+btnToggle.addEventListener('click', function () {
+console.log('clik')
+document.getElementById('sidebar').classList.toggle('active');
+$("#tools").hide();
+$("#sidebar").show();
+});
+
+document.getElementById('back').onclick = function () {
+  document.getElementById('sidebar').classList.toggle('active');
+  setTimeout(() => {
+    $("#tools").show();
+    $("#sidebar").hide();
+  }, 800);
+ 
+};
+document.getElementById('btnKids').onclick = function () {
+  $('#btnAdult').show();
+  $('#btnKids').hide();
+  $('#tipo').html('Talla Niño');
+  $('.minus-btnxs').prop('disabled',true);
+  $('.minus-btnK').prop('disabled',true);
+  $('.minus-btnmK').prop('disabled',true);
+  $('.minus-btnlK').prop('disabled',true);
+  $('.minus-btnxK').prop('disabled',true);
+  $('#XSK').show();
+  $('#SK').show();
+  $('#MK').show();
+  $('#LK').show();
+  $('#XLK').show();
+  //Hide Adult
+  $('#S').hide();
+  $('#M').hide();
+  $('#L').hide();
+  $('#XL').hide();
+  $('#2XL').hide();
+  $('#3XL').hide();
+  $('#4XL').hide();
+  $('#5XL').hide();
+}
+document.getElementById('btnAdult').onclick = function () {
+  $('#btnKids').show();
+  $('#btnAdult').hide();
+  $('#tipo').html('Talla Adulto');
+  $('#XSK').hide();
+  $('#SK').hide();
+  $('#MK').hide();
+  $('#LK').hide();
+  $('#XLK').hide();
+  //Hide Adult
+  $('#S').show();
+  $('#M').show();
+  $('#L').show();
+  $('#XL').show();
+  $('#2XL').show();
+  $('#3XL').show();
+  $('#4XL').show();
+  $('#5XL').show();
+}
+</script>
 </body>
 </html>

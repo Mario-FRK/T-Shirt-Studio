@@ -31,13 +31,13 @@ a.btn.dark_gray_bt:focus,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover,
 .icon_feature {
-	background: #FC3308;
+	background: #0a7aa9;
     background-size: 100% 100%;
     border: none;
 }
 
 .theme_bg {
-	background: #FC3308;
+	background: #77c4df
 }
 
 #navbar_menu > ul > li a.active,
@@ -49,12 +49,12 @@ footer p a:hover,footer p a:focus,
 footer ul.social_icons li a:hover,
 footer ul.social_icons li a:focus,
 .breadcrumb li a {
-    color: #FC3308;
+    color:  #000;
 }
 
 .btn.sqaure_bt {
     border-radius: 0;
-	background: #FC3308;
+	background: #0a7aa9;
 }
 
 .btn.sqaure_bt span {
@@ -67,16 +67,16 @@ footer ul.social_icons li a:focus,
 footer h2::after,
 .footer_mail-section .field button.button_custom,
 .cprt,.contact_us_section {
-	background: #FC3308;
+	background: #0a7aa9;
 }
 
 .tp-caption.tp-shape.tp-shapewrapper.tp-resizeme.rs-parallaxlevel-0 {
-    background: #FC3308 !important;
+    background: #ffffff !important;
 }
 
 a.btn.main_bt,
 button.btn.main_bt {
-	background: #FC3308;
+	background: #0a7aa9;
 	border: none;
 }
 
@@ -84,7 +84,7 @@ a.btn.main_bt:hover,
 a.btn.main_bt:focus,
 button.btn.main_bt:hover,
 button.btn.main_bt:focus {
-	background: #FC3308;
+	background: #0a7aa9;
 	background-size: 100% 100%;
 	color: #fff;
 }
@@ -108,7 +108,7 @@ a.btn.light_btn:focus {
 }
 
 .modal-backdrop {
-	background-color: rgba(252, 51, 8, .95);
+	background-color: rgba(10, 121, 169, 0.95);
 }
 
 #navbar_menu ul ul,
@@ -125,7 +125,7 @@ hr.dottad_border,
 .pagination>.active>span:hover,
 .comment_section,
 .boder_dottat_small {
-	border-color: #FC3308;
+	border-color: #0a7aa9;
 }
 
 
@@ -163,7 +163,7 @@ button.border_btn_white_border:focus,
 button.border_btn_white_border:hover,
 a.border_btn_white_border:hover,
 a.border_btn_white_border:focus {
-	background: #fff;
+	background: #0a7aa9;
 	border: solid #fff 1px;
 }
 
@@ -192,7 +192,7 @@ a.btn.white_btn:hover {
 }
 
 .tp-bannertimer {
-    background: #FC3308 !important;
+    background: #0a7aa9 !important;
 }
 
 .tp-caption.tp-shape.tp-shapewrapper.rs-parallaxlevel-0 {

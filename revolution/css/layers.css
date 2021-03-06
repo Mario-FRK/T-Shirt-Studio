@@ -360,7 +360,7 @@ website:   	http://www.themepunch.com
 
 .tp-caption.large_bold_grey,.large_bold_grey
 {
-	background-color:transparent;
+	background-color:#000;
 	border-color:#ffd658;
 	border-style:none;
 	border-width:0;
@@ -1586,7 +1586,7 @@ website:   	http://www.themepunch.com
 .tp-caption.FatRounded:hover,.FatRounded:hover
 {
 	background-color:rgba(0,0,0,1.00);
-	border-color:rgba(211,211,211,1.00);
+	border-color:rgba(241,7,9,1.00);
 	border-radius:50px 50px 50px 50px;
 	border-style:none;
 	border-width:0;
@@ -1597,11 +1597,11 @@ website:   	http://www.themepunch.com
 .tp-caption.NotGeneric-Title,.NotGeneric-Title
 {
 	background-color:transparent;
-	border-color:transparent;
+	border-color:#000;
 	border-radius:0 0 0 0;
-	border-style:none;
-	border-width:0;
-	color:rgba(255,255,255,1.00);
+	border-style:solid;
+	border-width: .500;
+	color:rgba(241,7,9,1.00);
 	font-family:Raleway;
 	font-size:70px;
 	font-style:normal;
@@ -1614,11 +1614,11 @@ website:   	http://www.themepunch.com
 .tp-caption.NotGeneric-SubTitle,.NotGeneric-SubTitle
 {
 	background-color:transparent;
-	border-color:transparent;
+	border-color:#000;
 	border-radius:0 0 0 0;
-	border-style:none;
+	border-style:solid;
 	border-width:0;
-	color:rgba(255,255,255,1.00);
+	color:rgba(241,7,9,1.00);
 	font-family:Raleway;
 	font-size:13px;
 	font-style:normal;
@@ -1637,7 +1637,7 @@ website:   	http://www.themepunch.com
 	border-radius:0 0 0 0;
 	border-style:solid;
 	border-width:1px;
-	color:rgba(255,255,255,1.00);
+	color:rgba(241,7,9,1.00);
 	font-family:Raleway;
 	font-size:14px;
 	font-style:normal;
